@@ -3,3 +3,5 @@ from datetime import datetime
 import webbrowser
 
 app = Flask(__name__)
+
+@app.route("/")
