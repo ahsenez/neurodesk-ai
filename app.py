@@ -12,3 +12,16 @@ def home():
 def command():
     data = request.get_json()
     user_command = data.get("command", "").lower()
+
+    if "time" in user_command:
+        response = f"The current time is {datetime.now().strftime('%H:%M')}."
+    elif "date" in user_command:
+        response = f"Today's date is {datetime.now().strftime('%d %B %Y')}."
+    elif "youtube" in user_command:
+        response = "Opening YouTube..."
+    elif "google" in user_command:
+        response = "Opening Google..."
+    elif "task" in user_command:
+        response = "Task added to your productivity list."
+    elif "hello" in user_command:
+        response = "Hello, I am NeuroDesk AI. How can I assist you today?"
