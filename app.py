@@ -29,3 +29,6 @@ def command():
         response = "Command analyzed. NeuroDesk AI is ready to assist you."
 
    return jsonify({"response": response})
+
+if __name__ == "__main__":
+    app.run(debug=True)
