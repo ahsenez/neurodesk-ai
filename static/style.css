@@ -15,3 +15,4 @@ font-family: Arial, sans-serif;
     width: 240px;
   height: 100vh;
     background: rgba(9, 16, 36, 0.96);
+    border-right: 1px solid rgba(255,255,255,0.08);
