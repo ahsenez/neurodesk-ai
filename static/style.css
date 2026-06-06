@@ -11,3 +11,4 @@ font-family: Arial, sans-serif;
 }
 
 .sidebar {
+  position: fixed;
