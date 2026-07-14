@@ -9,3 +9,4 @@ async function sendCommand() {
 
     const userMessage = document.createElement("div");
     userMessage.className = "user-message";
+    userMessage.innerText = command;
