@@ -8,3 +8,4 @@ async function sendCommand() {
     if(command.trim() === "") return;
 
     const userMessage = document.createElement("div");
+    userMessage.className = "user-message";
