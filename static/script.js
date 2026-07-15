@@ -12,3 +12,5 @@ async function sendCommand() {
     userMessage.innerText = command;
 
     chatBox.appendChild(userMessage);
+
+    const response = await fetch("/command", {
