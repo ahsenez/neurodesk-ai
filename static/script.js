@@ -23,3 +23,5 @@ async function sendCommand() {
             command: command
         })
     });
+
+    const data = await response.json();
