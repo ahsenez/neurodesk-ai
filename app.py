@@ -32,3 +32,7 @@ def command():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+import os
+
+api_key = os.getenv("OPENAI_API_KEY")
