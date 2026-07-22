@@ -35,3 +35,18 @@ async function sendCommand() {
 
     chatBox.scrollTop = chatBox.scrollHeight;
 }
+
+function updateClock(){
+
+    const now = new Date();
+
+    document.getElementById("clock").innerHTML =
+        now.toLocaleTimeString();
+
+    document.getElementById("date").innerHTML =
+        now.toLocaleDateString();
+}
+
+setInterval(updateClock,1000);
+
+updateClock();
